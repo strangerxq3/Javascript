@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-family: sans-serif;
+            padding: 20px 200px;
+            color: orange;
+        }
+        span{
+            color: black;
+        }
+        button{
+            color: rgb(77, 75, 75);
+            background-color:rgb(254, 191, 75);
+            border: 9px solid rgb(254, 191, 75);
+            border-radius: 15px;
+            font-family: sans-serif;
+            width: 120px;
+            height:35px;
+            font-weight: 400;
+            text-align: center;
+            transition: 0.5s ease-out;
+        }
+        button:hover{
+            background-color: rgb(255, 178, 35);
+            border: 9px solid   rgb(255, 178, 35);
+            border-radius: 16px;
+            color: rgba(11, 11, 11, 0.518);
+        }
+    </style>
+</head>
+<body>
+    <h1>Cart <span>Quantity</span></h1>
+    <button onclick="console.log(`Cart Quantity : ${Cart_Quantity}`)">Show Quantity</button>
+    <button 
+    onclick="Cart_Quantity ++;
+    console.log(`Cart Quantity : ${Cart_Quantity}`);"";
+    >Add To Cart</button>
+
+    <button 
+    onclick="Cart_Quantity += 2;
+    console.log(`Cart Quantity : ${Cart_Quantity}`);"";
+    >+2</button>
+    
+    <button 
+    onclick="Cart_Quantity +=  3;
+    console.log(`Cart Quantity : ${Cart_Quantity}`);"";
+    >+3</button>
+    <button
+    onclick="alert('! Do you want to reset the cart')
+    Cart_Quantity = 0;
+    console.log('Cart wad Reset')
+    console.log(`Cart Quantity : ${Cart_Quantity}`)";
+    >Reset Cart</button>
+    
+<script>
+    let Cart_Quantity = 0;
+</script>
+</body>
+</html>
