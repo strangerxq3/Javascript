@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background: rgb(45, 45, 45);
+
+        }
+        .h1{
+            font-size: 15vh;
+            font-family: sans-serif;
+            font-weight: 600;
+            color: rgb(253, 240, 197);
+            text-align: center;
+            margin:30px 0px;  
+            transition: 1s;          
+        }
+        .h1 span:hover{
+            color: rgb(255, 213, 4);
+            text-shadow: -12px 2px 5px rgb(14, 13, 13);
+        }
+        button{
+            font-family: sans-serif;
+            font-weight: 500;
+            font-size: 30px;
+            text-align: center;
+            /* padding: ; */
+            width: 60vh;
+            height: 50px;
+            border: 10px solid transparent;
+            border-radius: 18px;;
+            background-color: rgb(206, 116, 0);
+            transition: 0.5s ease;
+        }
+        button:hover{
+            transform: translateY(0.8px);
+            color:rgb(201, 198, 198);
+            background-color: rgb(172, 100, 7); ;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="h1"><span> Rock Paper Scissor Game</span></div>
+   <div class="btn">
+
+       <button onclick="
+
+const randomNO = Math.random()
+
+let computerMove= '';
+
+if (randomNO >=0 && randomNO < 1/3)
+    { 
+        computerMove ='ROCK';
+    }
+    else if(randomNO >= 1/3 && randomNO<2/3)
+    {
+        computerMove='PAPER';
+    }
+    else if(randomNO >=2/3 && randomNO<1){
+        computerMove-'SCISSORS';
+    }
+
+    let result = '';
+
+    console.log(computerMove)
+
+    if(computerMove === 'ROCK'){
+        result = 'Tie'
+    }else if(computerMove === 'PAPER'){
+        result = 'You Lost'
+    }else if(computerMove === 'SCISSORS'){
+        result = 'You Win'
+    }
+    
+    alert(`You Picked Rock and computer Picked ${computerMove} --${result} `)
+    
+    ">ROCK</button>
+    
+    <button onclick="
+
+    // const randomNO = Math.random()
+
+    // let computerMove= '';
+
+    if (randomNO >=0 && randomNO < 1/3)
+    { 
+        computerMove ='ROCK';
+    }
+    else if(randomNO >= 1/3 && randomNO<2/3)
+    {
+        computerMove='PAPER';
+    }
+    else if(randomNO >=2/3 && randomNO<1){
+        computerMove-'SCISSORS';
+    }
+    
+    // let result = '';
+    
+    console.log(computerMove)
+    
+    if(computerMove === 'ROCK'){
+        result = 'You Win'
+    }else if(computerMove === 'PAPER'){
+        result = 'Tie'
+    }else if(computerMove === 'SCISSORS'){
+        result = 'You Lost'
+    }
+
+    alert(`You Picked Pap and computer Picked ${computerMove} --${result} `)">PAPER</button>
+    
+    <button onclick="
+
+    // const randomNO = Math.random()
+
+    // let computerMove= '';
+
+    if (randomNO >=0 && randomNO < 1/3)
+    { 
+        computerMove ='ROCK';
+    }
+    else if(randomNO >= 1/3 && randomNO<2/3)
+    {
+        computerMove='PAPER';
+    }
+    else if(randomNO >=2/3 && randomNO<1){
+        computerMove-'SCISSORS';
+    }
+    
+    // let result = '';
+    
+    console.log(computerMove)
+
+    if(computerMove === 'ROCK'){
+        result = 'Tie'
+    }else if(computerMove === 'PAPER'){
+        result = 'You Lost'
+    }else if(computerMove === 'SCISSORS'){
+        result = 'You Win'
+    }
+    
+    alert(`You Picked Rock and computer Picked ${computerMove} --${result} `)">SCISSOR</button>
+    </div>
+</body>
+</html>
