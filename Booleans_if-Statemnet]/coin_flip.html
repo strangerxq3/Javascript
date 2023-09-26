@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="
+    let rndmnume = Math.random();
+    let computer_move = rndmnume < 0.5 ? 'Heads' : 'Tails';
+
+    let guess = 'Heads';
+    let result =(rndmnume === guess ? 'You win' : 'You lost');
+    alert(`you picked ${guess} and computer picked ${computer_move} --- ${result} `)
+    console.log(rndmnume === guess ? 'You win' : 'You lost');">
+    Heads</button>
+    
+    <button onclick="
+    
+    rndmnume = Math.random();
+    
+    computer_move = rndmnume < 0.5 ? 'Heads' : 'Tails';
+
+    guess = 'Tails';
+    result =(rndmnume === guess ? 'You win' : 'You lost' );
+
+    alert(`you picked ${guess} and computer picked ${computer_move} --- ${result} `)
+
+    console.log(rndmnume === guess ? 'You win' : 'You lost');">
+    Tails</button>
+    <script>
+        </script>
+</body>
+</html>
