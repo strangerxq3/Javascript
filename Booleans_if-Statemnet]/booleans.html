@@ -33,11 +33,49 @@
         // if (5){
         //     console.log('Truthy')//this statement is truthy statement because it behave like  true
         // }
-        if (0){
-            console.log('Falsy')//this statement is falsy statement because it behave like  false
-        }
+        // if (0){
+        //     console.log('Falsy')//this statement is falsy statement because it behave like  false
+        // }
 
-        // [false , NaN , 0 ,'',undefined, null]any value that is not in this list is truthy
+        // // [false , NaN , 0 ,'',undefined, null]any value that is not in this list is truthy
+        // cartquantity = 5;// variable value is 5 which is a truthy 
+
+        // if(cartquantity){
+        //     console.log('Cart has product');
+        // }//Cartquantity is trutthy so its will true and value will print on console;
+        // console.log(!0);// 0 is a falsy so the ! logical operator flip the false into true;
+        // console.log('text'/3);// This a falsy type 'NaN' means not a number invalid calculation;
+
+        // let variables1;
+        // console.log(variables1);// this is undefined one of the type of falsy 
+
+
+    //     <=== Ternary Operator ===>
+        // true ? 'Truthy': 'Falsy';//it can be used as a variable
+    //    | --->if this is truthy  then the result of the codeis the value that is wirtten at place of  string 'truthy'
+
+    //   Null ? 'Truthy': 'Falsy'
+    //    |--> if this falsy rhen the result of the code is the value that is written at place of string 'falsy'
+    // true ? 'trutthy' : 'falsy' ; -->it is short for code like this
+    //     >>> if (true){'truthy'}else{'falsy'};
+    // const result = NaN ? 'Truty' : 'Falsy';
+    // console.log(result)
+
+    //   <=== Guard Operator && ===> 
+
+    const message = 1 && console.log('Hello')/*it will start from left and if the first value is falsy then it will stop 
+    it is the shortcut of 
+    
+    >>>     if (condition){
+                console.log('hello');
+            }
+    */
+   console.log(message)
+
+   // <=== OR operator || ===>
+   
+   const currency = NaN||'USD';//it is like default if the first value before or is trthy then it will print first value but if the value before || is falsy then it will run hte value of after the || operator
+   console.log(currency)
     </script>
 </body>
 </html>
