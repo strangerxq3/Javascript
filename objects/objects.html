@@ -14,33 +14,43 @@
 
 <body>
     <script>
-        /*      <=== OBJECTS ===>
-              An object grou multiples value together */
+        // /*      <=== OBJECTS ===>
+        //       An object grou multiples value together */
 
-        const product = {
-            name: 'socks',
-            /*thsi is property value pair==>  name :'socks',*/
-            price: 1097
-        }// this ia object not a varible like dictionary in python
-        console.log(product);
+        // const product = {
+        //     name: 'socks',
+        //     /*thsi is property value pair==>  name :'socks',*/
+        //     price: 1097
+        // }// this ia object not a varible like dictionary in python
+        // console.log(product);
 
-        // we can print only one property by this comd
-        console.log(product.name);
+        // // we can print only one property by this comd
+        // console.log(product.name);
 
-        // we can change the value of property by
-        product.name = 'cotton socks';
-        console.log(product);
+        // // we can change the value of property by
+        // product.name = 'cotton socks';
+        // console.log(product);
 
-        // we can add new value to a object by
-        product.NewProperty = true;
-        console.log(product);
+        // // we can add new value to a object by
+        // product.NewProperty = true;
+        // console.log(product);
 
-        // we can delete value of a object
-        delete product.NewProperty;
-        console.log(product);
-        console.log(typeof product);
+        // // we can delete value of a object
+        // delete product.NewProperty;
+        // console.log(product);
+        // console.log(typeof product);
+        
+        // why we use objects? ===> these makes our code more organiz
 
-        // why we use objects? ===> these makes our code more organized
+        const product2 ={
+            name : 'shirt',
+            'dilevery-time' :'2h'
+        }
+        console.log(product2);
+        console.log(product2.name);
+        console.log(product2['dilevery-time']);
+        // console.log(product2.dilevery-time);
+
     </script>
 </body>
 
