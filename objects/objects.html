@@ -44,12 +44,24 @@
 
         const product2 ={
             name : 'shirt',
-            'dilevery-time' :'2h'
+            'dilevery-time' :'2h',
+            rating:{
+                star : 4,
+                no_ratings :87
+            },
+            fun : function func1(){
+                console.log('Function inside object');
+            }
         }
         console.log(product2);
         console.log(product2.name);
         console.log(product2['dilevery-time']);
         // console.log(product2.dilevery-time);
+        console.log(product2.rating.no_ratings)
+        // console.log(product2.fun) we can run function with this -->
+        product2.fun();
+        //Function inside objects ==> methods
+        console.log(typeof product2.fun);
 
     </script>
 </body>
