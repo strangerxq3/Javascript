@@ -40,7 +40,7 @@
         // console.log(product);
         // console.log(typeof product);
         
-        // why we use objects? ===> these makes our code more organiz
+        // // why we use objects? ===> these makes our code more organiz
 
         const product2 ={
             name : 'shirt',
@@ -54,14 +54,36 @@
             }
         }
         console.log(product2);
-        console.log(product2.name);
-        console.log(product2['dilevery-time']);
-        // console.log(product2.dilevery-time);
-        console.log(product2.rating.no_ratings)
-        // console.log(product2.fun) we can run function with this -->
-        product2.fun();
-        //Function inside objects ==> methods
-        console.log(typeof product2.fun);
+        // console.log(product2.name);
+        // console.log(product2['dilevery-time']);
+        // // console.log(product2.dilevery-time);
+        // console.log(product2.rating.no_ratings)
+        // // console.log(product2.fun) we can run function with this -->
+        // product2.fun();
+        // //Function inside objects ==> methods
+        // console.log(typeof product2.fun);
+        // in console.log [console is object and log is  function in object]
+        // console.log(typeof console.log);
+        // in Math.random [Math is object and .random is  function in object]
+        // console.log(typeof Math.random);
+        // these are built in objects in JS .there are two more built in object :JSON /LocalStorage
+        //    <==== JSON OBJECT ====>
+        /* JSON == Java-Script-Object-Notation.It is similar to javascript oject but  has less features.
+        All properties and Values must use "" . JSON does not support function.WE use this syntax because JS object only work in Javascript but jSON
+        can work in all langauge.JSON synax is Univarsal .Theref0re, we use JSON when sending data to another computer or between computer */
+        /* BUILT IN JSON OBJECTS ==> let us convert normal object in JSON */
+        // Converting JS object into JSON
+        console.log (JSON.stringify(product2));//stringify make all properties and value string
+        console.log (typeof JSON.stringify(product2));
+        // Converting JSON JS object]
+        const JSONstring = JSON.stringify(product2);
+        console.log(JSON.parse(JSONstring)); 
+        // <=== LOCALSTORAGE ===>
+        /*it is used to sav data permenantly. We are saving our values in variable but if we refreah the page .they only exsit
+        exsit in current page when we refresh a page or close the apge all varible will be deleted . Variables are temporary . we can see
+        on our rock paper scissors project. To save a value in localStorage we need use localStorage.setitem() Now we using this
+        in the Rock/Paper/Scissors project*/
+
 
     </script>
 </body>
