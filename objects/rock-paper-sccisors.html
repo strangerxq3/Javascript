@@ -27,16 +27,24 @@
         score.wins= 0;
         score.loses= 0;
         score.tie= 0;
+        localStorage.removeItem('score')
         ">Reset button</button>
     </div>
     <script>
 
-        let score = {
-            wins: 0,
-            loses: 0,
-            tie: 0
-        }
+        let score = JSON.parse(localStorage.getItem('score')) || {
+                wins : 0,
+                loses : 0,
+                tie : 0
+            }
 
+        // if (score === null){
+        //     score ={
+        //         wins : 0,
+        //         loses : 0,
+        //         tie : 0
+        //     }
+        // }
 //----------------------------------------------------------------------------
         
 //              <======= Function For PalyerMove Result ========>
@@ -90,6 +98,7 @@
             else if (result === 'Tie.') {
                     score.tie += 1;
                 }
+            localStorage.setItem('score', JSON.stringify(score));// it will we the we play and score is decided
             alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
              Win : ${score.wins} | Loses : ${score.loses} | Tie : ${score.tie}`);
             return playgame;
