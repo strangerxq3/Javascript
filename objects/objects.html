@@ -42,18 +42,18 @@
         
         // // why we use objects? ===> these makes our code more organiz
 
-        const product2 ={
-            name : 'shirt',
-            'dilevery-time' :'2h',
-            rating:{
-                star : 4,
-                no_ratings :87
-            },
-            fun : function func1(){
-                console.log('Function inside object');
-            }
-        }
-        console.log(product2);
+        // const product2 ={
+        //     name : 'shirt',
+        //     'dilevery-time' :'2h',
+        //     rating:{
+        //         star : 4,
+        //         no_ratings :87
+        //     },
+        //     fun : function func1(){
+        //         console.log('Function inside object');
+        //     }
+        // }
+        // console.log(product2);
         // console.log(product2.name);
         // console.log(product2['dilevery-time']);
         // // console.log(product2.dilevery-time);
@@ -73,17 +73,40 @@
         can work in all langauge.JSON synax is Univarsal .Theref0re, we use JSON when sending data to another computer or between computer */
         /* BUILT IN JSON OBJECTS ==> let us convert normal object in JSON */
         // Converting JS object into JSON
-        console.log (JSON.stringify(product2));//stringify make all properties and value string
-        console.log (typeof JSON.stringify(product2));
-        // Converting JSON JS object]
-        const JSONstring = JSON.stringify(product2);
-        console.log(JSON.parse(JSONstring)); 
+        // console.log (JSON.stringify(product2));//stringify make all properties and value string
+        // console.log (typeof JSON.stringify(product2));
+        // // Converting JSON JS object]
+        // const JSONstring = JSON.stringify(product2);
+        // console.log(JSON.parse(JSONstring)); 
         // <=== LOCALSTORAGE ===>
         /*it is used to sav data permenantly. We are saving our values in variable but if we refreah the page .they only exsit
         exsit in current page when we refresh a page or close the apge all varible will be deleted . Variables are temporary . we can see
         on our rock paper scissors project. To save a value in localStorage we need use localStorage.setitem() Now we using this
         in the Rock/Paper/Scissors project*/
 
+        //  Null = intentionally  want something to be empty    
+// <======== Auto Boxing========>
+        // console.log('hello'.length);
+        // console.log('hello'.toUpperCase());//auto boxing can done on boolean ,float except null undefined
+
+        const object1 ={
+            message : 'Hello'
+        };
+        const object2 = object1 ;
+        object1.message= 'Good Job'
+
+        const object3 = {
+            message : 'Good Job'
+        } ;
+//  we are not save data in object but saving the refrence of data
+        console.log(object1);
+        console.log(object2);
+        console.log(object1.message===object3.message);
+        console.log(object1===object2);
+        // we camparing references not hte value of objects
+
+//      <==== SHORTCUTS IN OBJECT =====>
+        
 
     </script>
 </body>
