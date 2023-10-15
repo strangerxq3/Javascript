@@ -8,14 +8,25 @@
 <body>
     <button>hello</button>
     <script>
-//  Document Object Model ===> DOM is link to web page which means DOM represents or model the
-       //document.body.innerHTML = 'hello';//!this will change the whole html page with value we write in this situation we replce button with hello string(text)
+        
+        //  Document Object Model ===> DOM is link to web page which means DOM represents or model the
+        //document.body.innerHTML = 'hello';//!this will change the whole html page with value we write in this situation we replce button with hello string(text)
         // in this document is object  .body is property
-       // document.title = 'Chnage the title'//this object change the title of page       
-        console.log(document.title);
-        document.title = 'Changed';
-        // we can have html tags in javascript DOM combine them both
-        console.log(document.body);
-    </script>
+        //    // document.title = 'Chnage the title'//this object change the title of page       
+        //     console.log(document.title);
+        //     document.title = 'Changed';
+        //     // we can have html tags in javascript DOM combine them both
+        //     console.log(document.body);
+        //     console.log(typeof document.body);
+        
+        //     console.log(document.body.innerHTML);
+        //     document.body.innerHTML = '<button>Changed</button>'
+        
+        //document.querySelector() let us get any element from webpge and put it inside the javascript
+        console.log(document.querySelector('button'));
+        console.log(document.querySelector('button').innerHTML);
+        document.querySelector('button').innerHTML='Changed';
+        console.log(document.querySelector('button'));
+        </script>
 </body>
 </html>
