@@ -7,6 +7,7 @@
 </head>
 <body>
     <button>hello</button>
+    <button class="js-button">Second button</button>
     <script>
         
         //  Document Object Model ===> DOM is link to web page which means DOM represents or model the
@@ -24,9 +25,16 @@
         
         //document.querySelector() let us get any element from webpge and put it inside the javascript
         console.log(document.querySelector('button'));
+       
         console.log(document.querySelector('button').innerHTML);
-        document.querySelector('button').innerHTML='Changed';
+       
+        document.querySelector('button')
+            .innerHTML='Changed';// .innerHTML can used i multi line
         console.log(document.querySelector('button'));
+
+        // console.log(document.querySelector('button.js-button').innerHTML);// for a class we use ..
+        const ButtonElement = document.querySelector('button.js-button');// we can save a HTML element in a object with help of DOM..
+        console.log(ButtonElement);
         </script>
 </body>
 </html>
