@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Projects</title>
+</head>
+<body>
+    <p>This is a subscribe button</p>
+    <button class="subs" onclick="
+    subscribe();
+     ">     Subscribe</button>
+    <script>
+    function subscribe(){
+        
+        const ButtonElement= document.querySelector('.subs');
+        if(ButtonElement.innerText === 'Subscribe'){
+            ButtonElement.innerHTML = 'Subscribed';
+        }else{
+            ButtonElement.innerHTML='Subscribe'
+        }
+    }
+    </script>
+</body>
+</html>
