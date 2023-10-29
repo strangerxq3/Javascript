@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Cartupdate(cartquantity)">Show Quantity</button>
+    <button onclick="Cartupdate(1)">Add To Cart</button>
+    <button onclick="Cartupdate(3)">+3</button>
+    <button onclick="Cartupdate(4)">+4</button>
+    <button onclick="Cartupdate(5)">+5</button>
+    <button onclick="cartquantity = 0; document.querySelector('.cart').innerHTML = 'Cart is Reset'">Remove Form Cart</button>
+    <!-- <button onclick="Cartupdate(-1)">-1</button> -->
+    <button onclick="Cartupdate(-2)">-2</button>
+    <p class="cart"></p>
+
+    <script>
+
+        let cartquantity = 0;
+
+        function Cartupdate(change){
+            if(cartquantity + change >10){
+            document.querySelector('.cart').innerHTML = 'Cart is Full'
+            return
+        } 
+            if(cartquantity + change<0){
+            document.querySelector('.cart').innerHTML = 'Cart is Empty'
+            return
+        } 
+          cartquantity += change;
+          document.querySelector('.cart').innerHTML = `Cart Quantity${cartquantity}`;
+            }
+    </script>
+</body>
+</html>
