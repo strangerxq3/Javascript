@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="Sub">
+
+        <p class="Sub-h" >This is a subscribe button</p>
+        <button class="subs" onclick="
+    subscribe();
+    ">     Subscribe</button>
+
+    </div>
+    <div class="cal">
+        
+        <p class="cal-h" >Amazon Shipping Calculator</p>
+        <p>Orders under $40 = +$10 shipping.
+        </p>
+        <p>Orders over $40 = FREE shipping.
+
+        </p>       
+        <input class="js-input" placeholder="Cost of Item" onkeydown="CostKeydown(event);
+    ">
+
+        <button  class="cal-btn" onclick="calculateCost()">Calculate</button>
+
+        <p class="js-result"></p>
+
+    </div>
+    <p>Rock Paper Scissor</p>
+    <a href="scissors.html">Click Here</a>
+    <script>
+     
+        function subscribe(){
+        
+            const ButtonElement= document.querySelector('.subs');
+            if(ButtonElement.innerText === 'Subscribe'){
+            ButtonElement.innerHTML = 'Subscribed';
+            ButtonElement.classList.add('is-sub')
+            }else{
+            ButtonElement.innerHTML='Subscribe'
+            ButtonElement.classList.remove('is-sub')
+            }
+        }
+
+        function CostKeydown(event) {
+            console.log(event.key)
+            if (event.key === 'Enter') {
+                calculateCost();
+            }
+        }
+
+        function calculateCost() {
+            const inputElement = document.querySelector('.js-input');
+            let CostOfOrder = Number(inputElement.value);
+
+            if (CostOfOrder < 40) {
+                CostOfOrder = CostOfOrder + 10;
+            }
+            console.log(CostOfOrder)
+            document.querySelector('.js-result').innerHTML = `The Total Cost Of Item is $${CostOfOrder}`;
+        }
+        </script>
+</body>
+</html>
