@@ -1,17 +1,39 @@
-const ToDo_List =[]
-// let  todo = ToDo_List.value
-function ToDoList(){
-    const inputElement = document.querySelector('.js-input');
-    let ToDo_name=inputElement.value;
-    ToDo_List.push(ToDo_name);
-    console.log(ToDo_List)
-    inputElement.value ='';
-    // document.querySelector('js-div').innerHTML =todo;
+
+const ToDoList = ['washing' , ' clotthing'];
+rendertodolist();
+function rendertodolist() {
+
+    let todolistHTML = '';
+    
+    for (let i = 0; i < ToDoList.length; i++) {
+
+        const todo = ToDoList[i]
+        const html = `<p> ${todo} </p>`
+        todolistHTML = todolistHTML + html
+
+    }
+    document.querySelector('.js-loop').innerHTML = todolistHTML
 }
 
+function todofunc() {
+    
+    const inputElement = document.querySelector('.js-input');
+    
+    const name = inputElement.value;
+    
+    ToDoList.push(name);
+    
+    console.log(ToDoList)
+    
+    rendertodolist()
+    
+    inputElement.value = '';
+    
+}
+// console.log(todolistHTML)
+
 function CostKeydown(event) {
-    // console.log(event.key)
     if (event.key === 'Enter') {
-            ToDoList();
+        todofunc();
     }
 }
