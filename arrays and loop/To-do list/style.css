@@ -1,0 +1,61 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.p-js{
+    font-size: larger;
+    font-weight: 550;
+    margin: 10px 110px;
+}
+.upper-body{
+    margin: 0px 10px;
+}
+.js-input{
+    border: 1px solid;
+    /* border-radius: 0; */
+    padding: 10px 15px;
+}
+.js-date{
+    border: 1px solid;
+    padding: 9px;
+}
+.js-btn{
+    padding: 11px 30px;
+    border: none;
+    background: rgba(0, 128, 0, 0.792);
+    color: white;
+}
+/* .p-loop{
+    padding: 15px 10px;
+} */
+.js-check{
+    -webkit-appearance: none; /* Remove default appearance */
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid ;
+    /* border-radius: 1px; */
+    vertical-align: middle;
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+    margin:  10px 15px 10px 9px;
+
+}
+.js-check:checked::before {
+    content: '\2714'; /* check mark symbol Unicode */
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgb(14, 12, 12);
+}
+.js-delete{
+    padding: 11px 24px;
+    border: none;
+    color: #fff;
+    background: rgba(139, 3, 3, 0.952);
+    margin: 0px 0px 0px 51px;
+}
+span{
+    margin: 0px 0px 0px 120px;
+}

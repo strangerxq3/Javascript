@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // func1()
+
+        // function greeting (){
+        //     console.log('hello')
+        // }
+        // const func1 = function (){//this is a anonymas function
+        //     console.log('Hello variable')
+        // }
+        // console.log(func1)
+        // console.log(typeof func1)
+        // func1();
+
+        // const obj ={
+        //     nun:1,
+        //     func:function (){
+        //         console.log('Hello Object')
+        //     }
+        // }
+        // obj.func()
+
+        // function function_in_function(param){
+        //     param();            
+        // }
+        // function_in_function(
+        //     function(){
+        //         console.log('Function in Function')
+        //     }
+        // )
+        setTimeout(function(){
+            console.log('Timeout')
+        }, (2500));
+        console.log('Vefore Timeout')
+        setInterval(function(){
+            console.log('interval')
+        }, (2500));
+        console.log('Vefore interval')
+    </script>
+</body>
+</html>

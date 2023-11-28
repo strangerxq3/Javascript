@@ -1,0 +1,103 @@
+*{
+    /* margin: 0 0 ; */
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(51, 56, 55);
+    color: white;
+}
+.subs{
+    border: none ;
+    color: #fff;
+    background: black;
+    /* width: 6.5rem;
+    height: 2.3rem; */
+    padding: 10px 14px 10px 14px;
+    border-radius: 50px;
+    font-weight:  bold;
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+.is-sub{
+    color: black;
+    background: rgb(210, 210, 210);
+}
+.js-input{
+    font-size: 15px;
+    border: 1px solid rgb(104, 104, 104);
+    padding: 10px 10px 10px 10px;
+}
+.cal-btn{
+    border: 1px solid rgb(2, 147, 12) ;
+    font-size: 15px;
+    padding: 10px 10px 10px;
+    background: rgb(2, 147, 12);
+    color: #fff;
+}
+.-icon{
+    height: 50px;
+    width: 40px;
+}
+.-btn{
+    padding: 20px 25px;
+    /* color: transparent; */
+    background: transparent;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    margin: 20px 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.-btn:active{
+    border: 3px solid rgba(255, 255, 255, 0.374);
+}
+.-btn:hover{
+    border: 3px solid rgba(255, 255, 255, 0.377);
+}
+
+.reset-btn{
+    border: none;
+    background: rgb(255, 254, 254);
+    color: black;
+    padding: 10px 10px;
+    border-radius: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.reset-btn:active{
+    background-color: #ffffffba;
+}
+.reset-btn:hover{
+    background-color: #ffffffba;
+
+}
+.reset-btn1{
+    border: none;
+    background: rgb(255, 254, 254);
+    color: black;
+    padding: 10px 10px;
+    border-radius: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.reset-btn1:active{
+    background-color: #ffffffba;
+}
+.reset-btn1:hover{
+    background-color: #ffffffba;
+
+}
+.inner-icon{
+    height: 50px;
+    width: 40px;
+}
+.span{
+    border: 2px solid wheat ;
+}
+.div{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.js-move{
+    transition: 0.5s;
+}
+
