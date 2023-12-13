@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button class="btn1" onclick="time()">Add</button> -->
+    <!-- <button class="btn1" onclick="num++ ;start()">add</button>
+    <button onclick="if(num > 0){
+        num--
+        if(num === 0){
+            stop()
+        }
+        }">remove</button>
+    <p class="para"></p> -->
+        
+    <script>
+        
+        // const add = function addclick(){
+        //     console.log (2+3)
+        // }
+        // function runtwice(fun){
+        //     fun();
+        //     fun();
+        // }
+        // runtwice(function(){
+        //     console.log('Hello')
+        // })
+        // runtwice(add)
+        // function time(){
+        //     const btn = document.querySelector('.btn1')
+        //     btn.innerHTML = 'Loading..'
+        //     setTimeout(function(){
+        //         if (btn.innerHTML === 'Loading..'){
+        //             btn.innerHTML = 'Finished!'
+        //         }
+        //         else if(btn.innerHTML === 'Finished!'){
+        //             btn.innerHTML = 'Add'
+        //         }
+        //     },1000)
+        // }
+        // let id;
+        // function time(){
+        //     const inner= document.querySelector('.para') 
+        //     inner.innerHTML = 'Added'
+            
+        //     clearTimeout(id);
+
+        //     id =setTimeout(function(){
+        //         inner.innerHTML = '';
+        //     },2000)
+        // }
+        // let num =2
+        // let notification;
+        // let id;
+        // start()
+        // function start(){
+        //     if(notification){
+        //         return
+        //     }
+            
+        //     notification = true
+        //     id = setInterval(function(){
+        //         if(num <= 0){
+        //             document.title = 'Document';
+        //         }
+        //         else if(document.title === 'Document'){
+        //             document.title =`(${num}) Messages'`
+        //         }else(
+        //             document.title ='Document'
+        //             )
+        //         },1000)
+            
+        //     }
+        //     function stop(){
+        //         notification =false;
+        //         clearInterval(id)
+        //     }
+
+        const x =(a,b)=>a*b
+        console.log(x(1,2))
+        let resutl =[];
+        function countNum(array){
+            array.forEach((value,i)=>{
+                if(i>0){
+                    resutl++
+                }
+            })
+            return resutl;
+        }
+      console.log(countNum([1,-2,3,3,4,-4]));
+      function addNum (array,num){
+        return array.map(value=>value+1);
+      }
+      console.log(addNum([1,2,3,4,5],1))
+
+      function removeEgg(food){
+        let eggremoved = 0;
+        return food.filter(food=>{
+            if(food === 'egg'&& eggremoved <2){eggremoved++;return false;}
+            return true
+        })
+      }
+      console.log(removeEgg(['egg','appel','egg','ham','egg']))
+    </script>
+</body>
+</html>

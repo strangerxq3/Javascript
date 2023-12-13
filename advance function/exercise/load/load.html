@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="load.css">
 </head>
 <!--  Algorithm (Rock paper Scissors) -->
 <!--  
@@ -20,15 +20,15 @@
 
         <h2>Rock Paper Scissor Game</h2>
         
-        <button class="-btn" onclick="
+        <button class="-btn rock-btn" onclick="
         playgame('rock')"
         ><img class="-icon" src="image\rock.png" alt=""></button>
 
-        <button class="-btn" onclick="
+        <button class="-btn paper-btn" onclick="
         playgame('paper')"
         ><img class="-icon" src="image\paper.png" alt=""></button>
 
-        <button class="-btn" onclick="
+        <button class="-btn scissors-btn " onclick="
         playgame('scissors')"
         >
         <img class="-icon" src="image\scissors.png" ></button>
@@ -42,17 +42,15 @@
 
             
         <button class="reset-btn" onclick="
-        score.wins= 0;
-        score.loses= 0;
-        score.tie= 0;
-        localStorage.removeItem('score')
-        updateScoreElement();
+       
         // p_result();
         ">↺ Reset button</button>
-        <button class="reset-btn1" onclick="autoplay()">▷ Auto Play</button>
+        <button class="reset-btn1" >▷ Auto Play</button>
+        <p class="confirm"></p>
     </div>
 
-<script src="script.js"></script>
+<script src="load.js"></script>
+
 </body>
 
 </html>

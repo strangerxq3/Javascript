@@ -9,7 +9,7 @@ let IsAutoPlaying = false;
 let id;
 function autoplay(){
     if(!IsAutoPlaying){
-        id = setInterval(function(){
+        id = setInterval(()=>{
             const player = computer_Move()
             playgame(player)
         },1000)
@@ -42,7 +42,7 @@ function playgame(playerMove) {
         }
     }
 
-
+    
     else if (playerMove === 'paper') {
 
         if (computerMove === 'rock') {
@@ -63,7 +63,7 @@ function playgame(playerMove) {
             result = 'Tie.';
         }
     }
-
+    
     if (result === 'You win.') {
         score.wins += 1;
     }
@@ -79,18 +79,18 @@ function playgame(playerMove) {
     //  Win : ${score.wins} | Loses : ${score.loses} | Tie : ${score.tie}`);
 
     updateScoreElement();
-
+    
     document.querySelector('.js-result').innerHTML = result;
-
+    
     document.querySelector('.js-move').innerHTML = `You <img src = "image/${playerMove}.png" class = "inner-icon">  Computer <img src = "image/${computerMove}.png" class = "inner-icon">`
 }
 function updateScoreElement() { document.querySelector('.js-score').innerHTML = ` Win : ${score.wins} | Loses : ${score.loses} | Tie : ${score.tie}`; }
 
 
 function computer_Move() {
-
+    
     const randomNumber = Math.random();
-
+    
     let computerMove = '';//local variable
 
     if (randomNumber >= 0 && randomNumber < 1 / 3) {
@@ -102,3 +102,23 @@ function computer_Move() {
     }
     return computerMove;
 }
+document.querySelector('.rock-btn').addEventListener('click',()=>{
+    playgame('rock')
+})
+document.querySelector('.paper-btn').addEventListener('click',()=>{
+    playgame('paper')
+})
+document.querySelector('.scissors-btn').addEventListener('click',()=>{
+    playgame('scissors')
+})
+document.body.addEventListener('keydown',(event)=>{
+    if(event.key === 'r'){
+        playgame('rock')
+    }
+    else if(event.key === 'p'){
+        playgame('paper')
+    }
+    else if(event.key === 's'){
+        playgame('scissors')
+    }
+})

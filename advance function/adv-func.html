@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <button class="js-btn">HELLO</button>
     <script>
         // func1()
 
@@ -35,14 +36,51 @@
         //         console.log('Function in Function')
         //     }
         // )
-        setTimeout(function(){
-            console.log('Timeout')
-        }, (2500));
-        console.log('Vefore Timeout')
-        setInterval(function(){
-            console.log('interval')
-        }, (2500));
-        console.log('Vefore interval')
-    </script>
+        // setTimeout(function(){
+        //     console.log('Timeout')
+        // }, (2500));
+        // console.log('Vefore Timeout')
+        // setInterval(function(){
+        //     console.log('interval')
+        // }, (2500));
+        // console.log('Vefore interval')
+        // [
+        //     'Watch Video',
+        //     'watch movie',
+        //     'gaming'
+        // ].forEach(function(value,i){
+        //     if(value === 'watch movie'){
+        //         return ;
+        //     }
+        //     console.log(i);
+        //     console.log(value);
+        // })
+        // const onep = onep =>{
+        //     console.log(onep + 1)
+        // }
+        // onep('has');
+        // const short =()=>1+2
+        // console.log(short());
+
+        // const object1 = {
+        //     method(){console.log('hello')},
+        //     name : 'hassan'
+        // }
+        // console.log(object1)
+        // object1.method()
+        // const buttonelement = document.querySelector('.js-btn')
+        // const click =()=>{console.log('hello')}
+        // buttonelement.addEventListener('click', click())
+        // buttonelement.addEventListener('click',()=>{console.log('hello1')})
+        const array =[1,2,3,-4,-5,4];
+        const ar2 =array.filter((value,i)=>{
+            return value>=0;
+        })
+        console.log(array);
+        console.log(ar2);
+        let ary =[1,2,3,4];
+        ary=ary.map(value=> value *10)
+        console.log(ary)
+        </script>
 </body>
 </html>

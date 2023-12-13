@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--  Algorithm (Rock paper Scissors) -->
+<!--  
+      1.computer randomly select a move  
+      2. Compare the result to get the result
+      4update the score (new step)
+      3. Disply the result and score in popup
+-->
+
+<body>
+    <div>
+
+        <h2>Rock Paper Scissor Game</h2>
+        
+        <button class="-btn rock-btn" onclick="
+        playgame('rock')"
+        ><img class="-icon" src="image\rock.png" alt=""></button>
+
+        <button class="-btn paper-btn" onclick="
+        playgame('paper')"
+        ><img class="-icon" src="image\paper.png" alt=""></button>
+
+        <button class="-btn scissors-btn " onclick="
+        playgame('scissors')"
+        >
+        <img class="-icon" src="image\scissors.png" ></button>
+        
+        <h2 class="js-result"></h2>
+        <p class="js-move"></p>
+        
+        <h2 class="js-score">
+        </h2>     
+        
+
+            
+        <button class="reset-btn" onclick="
+        score.wins= 0;
+        score.loses= 0;
+        score.tie= 0;
+        localStorage.removeItem('score')
+        updateScoreElement();
+        // p_result();
+        ">↺ Reset button</button>
+        <button class="reset-btn1" onclick="autoplay()">▷ Auto Play</button>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
