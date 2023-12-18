@@ -113,26 +113,35 @@
         };
         
         // const message = object4.message;
-        const {message,price} = object4;// destructuring --if we have the property in object and the varible are same the  we use this
-        console.log(message);
-        console.log(price);
-        // SHORTHAND SHORTCUT
-        const object5 = {
-            // message : message,//this is variable in object
-            message
-        };
-        console.log(object5)
+        // const {message,price} = object4;// destructuring --if we have the property in object and the varible are same the  we use this
+        // console.log(message);
+        // console.log(price);
+        // // SHORTHAND SHORTCUT
+        // const object5 = {
+        //     // message : message,//this is variable in object
+        //     message
+        // };
+        // console.log(object5)
         
-        const object6 ={
-            message : message,
-            // method:function func1(){
-            //     console.log('hello')
-            // }we write this in short
-            method(){
-                console.log('Hello');
+        // const object6 ={
+        //     message : message,
+        //     // method:function func1(){
+        //     //     console.log('hello')
+        //     // }we write this in short
+        //     method(){
+        //         console.log('Hello');
+        //     }
+        // }
+        // object6.method();
+        const obj={
+            firstname: 'has',
+            lastname: 'san',
+            age:9,
+            fullname(){
+                console.log( this.firstname + this.lastname)
             }
         }
-        object6.method();
+        obj.fullname();
         
 
     </script>
