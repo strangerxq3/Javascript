@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+>
+</head>
+<body>
+    <div class="cl">
+
+        <div class="clock"></div>
+    </div>
+    <script>
+        let clock = document.querySelector('.clock')
+        setInterval(() => {
+            update()
+        }, 1000);
+        
+        function update(){
+            let date = new Date();
+            clock.innerHTML = FormatTime(date)
+        }
+        function FormatTime (date){
+
+            let hours = date.getHours();
+            let minute = date.getMinutes();
+            let seconds = date.getSeconds();
+            let AM_PM =  hours <=12 ? 'am': 'pm';
+            hour = (hours % 12) ||12;
+
+            hours = zero(hours)
+            minute =zero (minute)
+            seconds =zero (seconds)
+
+            return `${hours}:${minute}:${seconds}:${AM_PM}`
+        }
+        function zero (time){
+            time = time.toString();
+            return time.length<2 ? '0'+ time : time;
+        }
+
+        </script>
+</body>
+</html>
