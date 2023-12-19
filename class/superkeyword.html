@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class animal{
+           constructor(name,age){
+            this.name =name
+            this.age =age
+           }
+           eat(){console.log(`${this.name} is Eating`)}
+        }
+        class Rabbit extends animal{
+            constructor(name){
+                super(name)
+            }
+            run(){
+                console.log(`${this.name} is running`)
+            }
+        }
+        class Hawk extends animal{
+            name = 'Hawk'
+            fly(){
+                console.log(`${this.name} is flying`)
+            }
+        }
+        class Fish extends animal{
+            name = 'fish'
+            swim(){
+                console.log(`${this.name} is swiming`)
+            }
+        }
+
+        const rabbit = new Rabbit('Rabbit');
+        rabbit.run()
+        rabbit.eat()
+    </script>
+</body>
+</html>

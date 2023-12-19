@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // class Car {
+        //     constructor(power){
+        //         this._gas= 50;
+        //         this._power = power;
+        //     }
+        //     get power(){
+        //         return `${this._power+100}hp`
+        //     }
+        //     get gas(){
+        //         return `${this._gas}L (${this._gas/50*100}%)`
+        //     }
+        //     set gas(v){
+        //         this._gas = v
+        //     }
+        // }
+
+        // let car = new Car(444);
+        // console.log(car.power)
+        // car.gas = 20
+        // console.log(car.gas)
+
+        //<--- Oject as arguments --->
+        // class Car {
+        //     constructor(model,year,color){
+        //         this.Model = model
+        //         this.year = year
+        //         this.color = color
+        //     }
+        //     drive(){
+        //         console.log(`You are driving ${this.Model}`)
+        //     }
+        // }
+        // const car1 = new Car('Honda Civic',2008,'white')
+        // const car2 = new Car('toyota corola',2018,'black')
+        // const car3 = new Car('Suzuki FX',1999,'blue')
+
+        // changeColor(car1,'blue')
+        // displayInfo(car1)
+
+        // function displayInfo(car){
+        //     console.log(car.Model);
+        //     console.log(car.year);
+        //     console.log(car.color);
+        // }
+        // function changeColor(car,color){
+        //     car.color = color
+        // }
+
+        //<--- Class in array --->
+
+        class Car {
+            constructor(model, year, color) {
+                this.Model = model
+                this.year = year
+                this.color = color
+            }
+            drive() {
+                console.log(`You are driving ${this.Model}`)
+            }
+        }
+
+
+
+        const car = [
+            new Car('Honda Civic', 2008, 'white'),
+            new Car('toyota corola', 2018, 'black'),
+            new Car('Suzuki FX', 1999, 'blue'),
+            new Car('Honda Vezel', 2022, 'white'),
+            new Car('Toyota Fortuner ', 2010, 'Silver'),
+            new Car('Suzuki Mehran', 2004, 'white')]
+            ;
+        // car[0].drive()
+        // car[1].drive()
+        // car[2].drive()
+        car.forEach((cars) => {
+            cars.drive()
+        })
+
+    </script>
+</body>
+
+</html>
