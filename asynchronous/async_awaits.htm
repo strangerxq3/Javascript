@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // async function func(){
+        //     let fileLoaded = false
+        //     if (fileLoaded ){
+        //         return'File is Loaded'
+        //     }else{
+        //        throw 'Not loaded'
+        //     }
+        // }
+        // func().then(value=>{console.log(value)})
+        // .catch(error =>{console.log(error)});
+        async function func(){
+            let fileLoaded = false
+            if (fileLoaded ){
+                return'File is Loaded'
+            }else{
+               throw 'Not loaded'
+            }
+        }
+        async function process (){
+          try{
+
+          let msg = await func()
+            console.log(msg)
+            }
+            catch(error){
+                console.log(error)
+            }
+        }
+        console.log()
+        process()
+    </script>
+</body>
+</html>
